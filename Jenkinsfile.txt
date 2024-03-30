@@ -27,7 +27,6 @@ pipeline {
 
         stage('Run tests') {
             steps {
-                sh 'start /b npm run start'
                 sh 'npm run start'
                 sh 'npm test'
                 sh 'kill-port 8081'
